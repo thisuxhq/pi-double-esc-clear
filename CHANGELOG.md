@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/thisuxhq/pi-double-esc-clear/compare/pi-double-esc-clear-v1.0.1...pi-double-esc-clear-v1.0.2) (2026-07-14)
+
+
+### Documentation
+
+* polish package README ([75bcd49](https://github.com/thisuxhq/pi-double-esc-clear/commit/75bcd49e6f62729f233d15c8a1fb70b944e196c4))
+* polish package README for install and usage clarity ([3c5238a](https://github.com/thisuxhq/pi-double-esc-clear/commit/3c5238afc40bb5a43cc0f922394ee27966639403))
+
 ## [1.0.1](https://github.com/thisuxhq/pi-double-esc-clear/compare/pi-double-esc-clear-v1.0.0...pi-double-esc-clear-v1.0.1) (2026-07-14)
 
 
