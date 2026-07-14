@@ -1,0 +1,51 @@
+{
+  "name": "@thisux/pi-double-esc-clear",
+  "version": "1.0.1",
+  "description": "Clear a non-empty Pi editor draft with double Escape",
+  "license": "MIT",
+  "type": "module",
+  "author": "Sanju <https://sanju.sh/>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisuxhq/pi-double-esc-clear.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thisuxhq/pi-double-esc-clear/issues"
+  },
+  "homepage": "https://github.com/thisuxhq/pi-double-esc-clear#readme",
+  "keywords": [
+    "pi-package",
+    "pi-coding-agent",
+    "pi",
+    "extension",
+    "escape",
+    "editor",
+    "clear",
+    "thisux"
+  ],
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepare": "[ -z \"$CI\" ] && husky || true"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "husky": "^9.1.7"
+  }
+}
