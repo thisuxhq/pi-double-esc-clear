@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
   pull-requests: write
 
 jobs:
@@ -21,7 +22,8 @@ jobs:
       release_created: ${{ steps.release.outputs.release_created }}
       tag_name: ${{ steps.release.outputs.tag_name }}
     steps:
-      - uses: google-github-actions/release-please-action@v4
+      # google-github-actions/release-please-action is deprecated; v5 targets Node 24.
+      - uses: googleapis/release-please-action@v5
         id: release
         with:
           config-file: release-please-config.json
@@ -29,6 +31,8 @@ jobs:
 
   publish:
     needs: [release-please]
+    # Only runs when release-please actually cut a release (or on manual redispatch).
+    # Docs/chore-only merges correctly leave this job skipped — no version bump, no publish.
     if: |
       always() && (
         (github.event_name == 'push' && needs.release-please.result == 'success' && needs.release-please.outputs.release_created == 'true') ||
