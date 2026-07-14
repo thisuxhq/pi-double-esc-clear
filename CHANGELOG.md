@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/thisuxhq/pi-double-esc-clear/compare/pi-double-esc-clear-v1.0.2...pi-double-esc-clear-v1.0.3) (2026-07-14)
+
+
+### Bug Fixes
+
+* do not override bash-mode or empty-editor Escape ([29d8aea](https://github.com/thisuxhq/pi-double-esc-clear/commit/29d8aea11fca8bd83e77275edb1bf2eba7680dcb))
+* preserve default Escape behavior ([21a5cfc](https://github.com/thisuxhq/pi-double-esc-clear/commit/21a5cfce2ae637ce3ffc98424134106376fd519a))
+
 ## [1.0.2](https://github.com/thisuxhq/pi-double-esc-clear/compare/pi-double-esc-clear-v1.0.1...pi-double-esc-clear-v1.0.2) (2026-07-14)
 
 
