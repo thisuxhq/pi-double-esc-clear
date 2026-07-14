@@ -1,6 +1,6 @@
 {
   "name": "@thisux/pi-double-esc-clear",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Clear a non-empty Pi editor draft with double Escape",
   "license": "MIT",
   "type": "module",
